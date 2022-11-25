@@ -1,0 +1,219 @@
+body{
+    margin: 0%;
+    overflow-x: hidden;
+    color:rgb(0, 0, 0);
+}
+
+p{
+    color: #222;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f26c4f; 
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+  
+  /* ------------------------------------------------ Navbar */
+
+.navbar{
+    background-color: #222 !important;
+    height: 6rem;
+}
+
+.navbar-toggler{
+    background-color: rgb(255, 55, 0)!important;
+}
+
+/* .navbar-collapse{
+    background-color: black;
+    border-radius: 2rem;
+} */
+
+.navbar-brand{
+    color:#f26c4f;
+}
+
+.navbar-nav a{
+    color: white;
+    font-size: 1.2rem;
+    transition: .4s;
+    border-radius: 3rem;
+    text-decoration: none;
+}
+
+.navbar-nav a:hover{
+    background-color:#f26c4f;
+    color: Black;
+    
+}
+
+
+
+.navbar-toggler-icon{
+    color: wheat;
+}
+
+
+.nav-link{
+    color: #222;
+}
+
+.navbar-nav a:focus
+{
+    background-color:#f26c4f;
+    color: #222 !important;
+}
+
+.logo{
+    transition: .3s;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+.active{
+    color: black;
+}
+
+
+/* -----------------------------------------------  landing Page */
+.landingpage{
+    min-height: 90%;
+
+      /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #414345, #232526); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+   
+    
+}
+
+.landingpage h1{
+    color:#fa6442
+}
+
+.landingpage p{
+    color: rgb(0, 0, 0);
+}
+
+.contactbtn{
+    width: 320px;
+    padding: 1rem;
+    background-color: #fa6442;
+    color:#222;
+    border: none;
+    border-radius: .2rem;
+    transition: .2s;
+}
+
+.contactbtn:hover{
+    border-radius: .2rem;
+    background-color: #f5a54a;
+    color: #b30000; 
+}
+
+.info a{
+    text-decoration: none;
+    list-style: none;
+
+}
+.online_indicator{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  transition:.3s;
+  background-color: #414345;
+}
+
+.online_indicator:hover{
+    transform: scale(1.3);
+}
+
+.true{
+    background-color: #1dca0a;
+}
+
+.false{
+    background-color: #b30000;
+}
+
+/* --------------------------------- ABOUT ME */
+
+
+.aboutme h4{
+    color:#fa6442;
+}
+
+.aboutme p{
+    margin: 0%;
+    color: #414345;
+}
+
+.aboutme .qualification{
+    margin-bottom: 1rem;
+}
+
+.cv button{
+    border: none;
+    background-color: transparent;
+}
+
+.cv img{
+    max-width: 100px;
+    transition: .4s; 
+}
+
+.cv img:hover{
+    max-width: 140px;
+    filter:drop-shadow(10px);
+    color:#fa6442;
+}
+
+.stat h1{
+    font-size: 6rem;
+}
+
+.stat .card{
+    border: none;
+    transition: .3s;
+    background-color:#fa6442;
+    -webkit-box-shadow: 10px 10px 16px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 16px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 16px -9px rgba(0,0,0,0.75);
+}
+
+.stat .card:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* footer ------------------ */
+.footer p{
+    color:rgb(247, 247, 247);
+}
+

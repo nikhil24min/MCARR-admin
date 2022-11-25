@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'feedbacks.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section id="feedback_bg">
+
+<div class="tablediv container">
+  <div class="tableheader d-flex justify-content-between align-items-center">
+    <div><h2 class="col">Feedbacks </h2></div>
+    <div> <a class="col backbtn" href=""><i class="fa-solid fa-arrow-left"></i>Back</a></div>
+  </div>
+
+
+  <table class="table table-responsive ">
+      <thead class="thead">
+        <tr>
+          <th >Sl.no</th>
+          <th >Date</th>
+          <th >Feedback</th>
+          <th >Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for each in feeds %}
+        <tr>
+          <td class="slno">{{each.id}}</td>
+          <td>{{each.datetime}}</td>
+          <td>{{each.feedback}}</td>
+          <td>{{each.name}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+  </table>
+</div>
+
+  
+</section>
+
+{% endblock %}
+</body>
+</html>

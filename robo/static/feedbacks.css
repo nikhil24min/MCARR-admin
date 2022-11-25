@@ -1,0 +1,72 @@
+body{
+    margin-top: 0;
+    background-color: rgb(255, 255, 255);
+    color: blanchedalmond;
+}
+
+#feedback_bg{
+    min-height: 60vh;
+    color: rgb(171, 171, 171);
+    background: url("IMAGES/19742.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tablediv .table{
+    color: rgb(209, 202, 202);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border-radius: 1rem; */
+    border: none;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border:none;
+}
+    
+.tableheader{
+    padding: 2rem;
+}
+
+.table thead{
+    font-size: 1.2rem;
+    background-color:rgb(220, 20, 20);
+    color: aliceblue;
+    border-radius: 1rem;
+    border-radius: 1rem;
+}
+
+
+
+th:first-of-type {
+    border-top-left-radius: 10px;
+}
+th:last-of-type {
+border-top-right-radius: 10px;
+}
+
+tbody tr:last-of-type td:first-of-type {
+border-bottom-left-radius: 10px;
+}
+tbody tr:last-of-type td:last-of-type {
+border-bottom-right-radius: 10px;
+}
+
+tbody{
+    background-color: rgb(32, 32, 32);
+}
+
+.slno{
+    text-align: center;
+}
+
+/* tr td:nth-child(2){
+    width:100px;
+} */
+
+.backbtn{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style%}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+<link rel="stylesheet" href="{%static 'index.css'%}">
+{% endblock %}
+
+{% block content %}
+<!-- Landing page ------------------------------------------------------------------------------>
+<section id="landingpageID">
+    <div  class="landingpage row row-cols-1 px-5 justify-content-center align-items-center" >
+        <div class="col-lg-8 align-self-end justify-content-around">
+            <h1 class="font-weight-bold name">MCA Robo Receptionist 
+                {% if tempstatus.online %}
+                <span class="online_indicator true"></span>
+                {% else %}
+                <span class="online_indicator false"></span>
+                {% endif %}
+                Admin
+            </h1>
+        </div>
+        <div class="col-lg-8 align-self-baseline info" style="color:bisque">
+            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis assumenda obcaecati ratione repellendus, modi repellat id nostrum magnam dolores distinctio nobis adipisci sapiente, eveniet amet iure, officia dolore expedita nemo!</p>
+            <a class="contactbtn" href="#about">Explore</a>
+        </div>
+    </div>
+</section>
+
+</header>
+
+<!-- About Me section-------------------------------------- -->
+<section id="aboutmeID">
+<div class="aboutme container">
+    <div class="education row justify-content-center align-items-center p-4">
+        <div class="photo col-md-4 row justify-content-center">
+            <img src="{% static 'IMAGES/recep.jpg' %}" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-8 row justify-content-center align-items-center statcol">
+            <div class="stat row  align-items-center  row-cols-1 row-cols-md-2 g-4 text-center">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h1 class="card-title">{{tempstatus.totinteractions}}</h1>
+                      <p class="card-text">Interactions</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">                          
+                    <div class="card-body">
+                      <h1 class="card-title">{{tempstatus.totfeedbacks}}</h1>
+                      <p class="card-text">feedbacks</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+    </div>
+
+</div>
+</section>
+{% endblock %}
