@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'chatbot.css' %}" />
+<script src="{% static 'chatbot.js' %}"></script>
+{% endblock style %}
+
+
+{% block content %}
+<div class="glass">
+    <h1>Ask Your Question??</h1>
+    <h2>Yeah,ask Some Question</h2>
+    <div class="input">
+        <input
+        type="text"
+        id="userBox"
+        onkeydown="if(event.keyCode == 13){ talk()}"
+        placeholder="Type your Question"
+        />
+    </div>
+    <p id="chatLog">Answer Appering Hear</p>
+</div>
+{% endblock %}
