@@ -6,6 +6,9 @@ from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm 
 from django.contrib.auth import login, authenticate
 
+import requests
+import json
+
 # from gmail import sendingMessage
 
 # sendingMessage("nikhil24min@gmail.com","subject","message")
@@ -127,3 +130,18 @@ def logout_request(request):
 
 def chatbot_func(request):
 	return render(request,'chatbot.html' )
+
+
+def chatbot_query(request, query):
+
+    django
+
+    response_API = requests.get('https://mcarr-api-version2.herokuapp.com/reply/'+query)
+    print(response_API.status_code)
+    result = response_API.text
+    print(result)
+
+
+
+    context = {'result':result}
+    return render(request,'chatbot.html', context )

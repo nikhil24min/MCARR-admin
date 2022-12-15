@@ -2,9 +2,6 @@
 
 {% load static %}
 
-
-
-
 {% block style %}
 <link rel="stylesheet" href="{% static 'chatbot.css' %}" />
 <script src="{% static 'chatbot.js' %}"></script>
@@ -12,9 +9,10 @@
 
 
 {% block content %}
+<form action="">
 <div class="glass">
-    <h1>Ask Your Question??</h1>
-    <h2>Yeah,ask Some Question</h2>
+    <h1 class="header">Ask Your Question about MCA.</h1>
+    <h2 class="question">"Hello"</h2>
     <div class="input">
         <input
         type="text"
@@ -23,6 +21,10 @@
         placeholder="Type your Question"
         />
     </div>
-    <p id="chatLog">Answer Appering Hear</p>
+    <p id="chatLog">Answer </p>
+    <button class="btn" type="submit">Send</button>
 </div>
+
+
+</form>
 {% endblock %}

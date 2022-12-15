@@ -16,7 +16,7 @@ function talk(){
     }
     }
 
-const api_url = "https://mcarr-api-version01.herokuapp.com/reply/";
+const api_url = "http://ec2-54-234-230-205.compute-1.amazonaws.com/reply/";
 
 // Defining async function
 async function getapi(url,mca) {

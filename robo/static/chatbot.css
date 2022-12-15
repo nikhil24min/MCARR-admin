@@ -1,0 +1,41 @@
+.glass{
+    margin:2rem;
+    padding:1rem;
+    padding-left: 1rem;
+}
+
+.header{
+    padding:.4rem;
+}
+.question{
+    padding:.4rem;
+}
+
+.input{
+    padding:.4rem;
+
+}
+
+#userbox{
+    padding: .4rem;
+    border-radius: 2rem;
+    border: solid orange 4px;
+    background-color: rgb(252, 252, 252);
+}
+
+#userbox:focus{
+    border: solid rgb(255, 172, 18) 4px;
+
+}
+
+#chatLog{
+    padding: .4rem;
+
+}
+
+.btn{
+    padding: .4rem;
+    background-color: rgb(231, 124, 9);
+    color:black;
+    width:200px;
+}   
